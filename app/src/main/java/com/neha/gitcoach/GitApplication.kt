@@ -2,6 +2,7 @@ package com.neha.gitcoach
 
 import android.app.Application
 import android.content.Context
+import com.intuit.sdp.BuildConfig
 import com.neha.gitcoach.utils.Constants
 import org.acra.ACRA
 import org.acra.config.CoreConfigurationBuilder

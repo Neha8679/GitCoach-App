@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.GravityCompat
 import androidx.navigation.fragment.NavHostFragment
+import com.intuit.sdp.BuildConfig
+
 import com.neha.gitcoach.databinding.ActivityMainBinding
 import com.neha.gitcoach.utils.Constants
 import com.neha.gitcoach.utils.Constants.shareMessage
