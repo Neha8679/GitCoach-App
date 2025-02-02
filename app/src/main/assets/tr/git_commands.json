@@ -1,0 +1,274 @@
+{
+  "gitCommands": [
+    {
+      "name": "Depoyu Başlat",
+      "command": "git init [dizin]",
+      "description": "Geçerli veya belirtilen dizinde yeni bir Git deposu başlatın.",
+      "example": "git init my_project"
+    },
+    {
+      "name": "Depoyu Klonla",
+      "command": "git clone [repository_url] [dizin]",
+      "description": "Mevcut bir Git deposunu yerel makinedeki yeni bir dizine kopyalayın.",
+      "example": "git clone https://github.com/user/repo.git my_repo"
+    },
+    {
+      "name": "Dosya Ekle",
+      "command": "git add [dosya(lar)]",
+      "description": "Bir işleme hazır olarak Git hazırlama alanına dosya ekleyin.",
+      "example": "git add file1.txt file2.txt"
+    },
+    {
+      "name": "Değişiklikleri İşle",
+      "command": "git commit - m [mesaj]",
+      "description": "Git deposunda yapılan değişiklikleri belirli bir işleme mesajı ile geçmişe kaydedin.",
+      "example": "git commit - m 'Önemli dosyalar ekleme'"
+    },
+    {
+      "name": "Push Değişiklikleri",
+      "command": "git push [remote_name] [branch_name]",
+      "description": "İşlenen değişiklikleri uzak bir depoya aktarın.",
+      "example": "git push origin master"
+    },
+    {
+      "name": "Değişiklikleri Çek",
+      "command": "git pull [remote_name] [branch_name]",
+      "description": "Değişiklikleri uzak bir depodan alın ve yerel depo ile birleştirin.",
+      "example": "git pull origin master"
+    },
+    {
+      "name": "Durumu Kontrol Et",
+      "command": "git durumu",
+      "description": "Git deposunun durumunu kontrol edin ve henüz yapılmamış değişiklikleri görüntüleyin.",
+      "example": "git durumu"
+    },
+    {
+      "name": "Taahhüt Geçmişini Görüntüle",
+      "command": "git günlüğü",
+      "description": "Git deposundaki işlem geçmişini görüntüleyin.",
+      "example": "git günlüğü"
+    },
+    {
+      "name": "Şube Oluştur",
+      "command": "git branch [branch_name]",
+      "description": "Git deposunda yeni bir dal oluşturun.",
+      "example": "git branch new_feature"
+    },
+    {
+      "name": "Şubeye Geç",
+      "command": "git checkout [branch_name]",
+      "description": "Git deposunda farklı bir dala geçin.",
+      "example": "git checkout new_feature"
+    },
+    {
+      "name": "Şubeleri Karşılaştır",
+      "command": "git diff [dal1] [dal2]",
+      "description": "Git havuzundaki iki dal arasındaki farkları karşılaştırın.",
+      "example": "git diff master new_feature"
+    },
+    {
+      "name": "Şubeleri Birleştir",
+      "command": "git merge [branch_name]",
+      "description": "Belirtilen bir daldaki değişiklikleri Git havuzundaki geçerli dalla birleştirin.",
+      "example": "git merge new_feature"
+    },
+    {
+      "name": "Bir Şubeyi Yeniden Adlandır",
+      "command": "git branch - m [new_branch_name]",
+      "description": "Git deposundaki mevcut dalı yeniden adlandırın.",
+      "example": "git branch - m updated_feature"
+    },
+    {
+      "name": "Bir Şubeyi Sil",
+      "command": "git branch - d [branch_name]",
+      "description": "Git havuzundaki bir dalı silin.",
+      "example": "git branch - d eski_özellik"
+    },
+    {
+      "name": "Değişiklikleri Sıfırla",
+      "command": "git reset [dosya]",
+      "description": "Git deposundaki bir dosyada yapılan değişiklikleri sıfırlayın.",
+      "example": "git reset file1.txt"
+    },
+    {
+      "name": "İşlemeyi Geri Al",
+      "command": "git revert [commit_hash]",
+      "description": "Git deposunda belirli bir işlemi geri alın.",
+      "example": "git revert abc123"
+    },
+    {
+      "name": "Bir Taahhüdü Etiketleyin",
+      "command": "git tag [tag_name] [commit_hash]",
+      "description": "Git deposundaki belirli bir işleme bir etiket ekleyin.",
+      "example": "git tag v1.0 abc123"
+    },
+    {
+      "name": "Zula Değişiklikleri",
+      "command": "git stash",
+      "description": "Git deposunda yapılan değişiklikleri işlemeden geçici olarak kaydedin.",
+      "example": "git stash"
+    },
+    {
+      "name": "Saklı Değişiklikleri Uygula",
+      "command": "git stash apply",
+      "description": "Git deposunda saklanan değişiklikleri uygulayın.",
+      "example": "git stash apply"
+    },
+    {
+      "name": "Zula Değişikliklerini Listele",
+      "command": "git stash listesi",
+      "description": "Git deposundaki tüm saklanan değişiklikleri listeleyin.",
+      "example": "git stash listesi"
+    },
+    {
+      "name": "Saklı Değişiklikleri Kaldır",
+      "command": "git stash drop",
+      "description": "Saklı değişiklikleri Git deposundan kaldırın.",
+      "example": "git stash drop"
+    },
+    {
+      "name": "Taahhüt Günlüğünü Göster",
+      "command": "git günlüğü",
+      "description": "Git deposunun işleme geçmişini görüntüleyin.",
+      "example": "git günlüğü"
+    },
+    {
+      "name": "Taahhüt Farklarını Göster",
+      "command": "git show [commit_hash]",
+      "description": "Git deposunda belirli bir işlemin farklılıklarını gösterin.",
+      "example": "git show abc123"
+    },
+    {
+      "name": "Uzaktan Değişiklikleri Getir",
+      "command": "git getir",
+      "description": "Güncellemeleri uzak bir depodan yerel depoya getir.",
+      "example": "git getir"
+    },
+    {
+      "name": "Uzaktan Değişiklikleri Çek",
+      "command": "git pull",
+      "description": "Güncellemeleri uzak bir depodan yerel depoya getirin ve birleştirin.",
+      "example": "git pull"
+    },
+    {
+      "name": "Yerel Değişiklikleri Gönder",
+      "command": "git push [remote_name] [branch_name]",
+      "description": "Yerel değişiklikleri uzak bir depoya aktarın.",
+      "example": "git push origin new_feature"
+    },
+    {
+      "name": "Uzak Depo Ekle",
+      "command": "git add [remote_name] [remote_url]",
+      "description": "Yerel depoya bir uzak depo ekleyin.",
+      "example": "git upstream uzaktan ekle https://github.com/upstream_repo.git"
+    },
+    {
+      "name": "Uzak Depoyu Kaldır",
+      "command": "git remove [REMOTE_NAME]",
+      "description": "Yerel depodan bir uzak depoyu kaldırın.",
+      "example": "git remote upstream'i kaldır"
+    },
+    {
+      "name": "Uzak Depoları Göster",
+      "command": "git uzaktan göster [REMOTE_NAME]",
+      "description": "Yerel depodaki uzak depo hakkındaki bilgileri göster.",
+      "example": "git uzaktan şov kaynağı"
+    },
+    {
+      "name": "Git Rebase",
+      "command": "git rebase [options ][--onto newbase ][ upstream [branch]]",
+      "description": "İşlemeleri bir daldan diğerine taşıyarak işleme geçmişini yeniden yazın.",
+      "example": "git rebase master"
+    },
+    {
+      "name": "Git Cherry - pick",
+      "command": "git cherry - pick [seçenekler ]<commit>",
+      "description": "Mevcut bazı işlemler tarafından getirilen değişiklikleri uygulayın.",
+      "example": "git cherry - pick abcd123"
+    },
+    {
+      "name": "Git Bisect",
+      "command": "git bisect [başla] [bitir]",
+      "description": "İkili arama yaparak bir aralıkta hangi işlemin hata oluşturduğunu bulun.",
+      "example": "git bisect başlangıç BAŞLIĞI~10"
+    },
+    {
+      "name": "Geçici Olarak Kaydet",
+      "command": "git stash [save | push ][- p |-- patch ][- k |-- keep - index ][- u |-- include - untracked ][- a |-- all ][- q |--quiet ][< message>]",
+      "description": "Henüz işlenmeye hazır olmayan değişiklikleri geçici olarak kaydedin.",
+      "example": "git stash save \"work in progress\""
+    },
+    {
+      "name": "Git Alt Modülü",
+      "command": "git alt modülü [options ][ submodule]",
+      "description": "Ana Git deponuzdaki alt depoları yönetin.",
+      "example": "git submodule update -- init"
+    },
+    {
+      "name": "Referans Günlüğü",
+      "command": "git reflog [seçenekler] [göster]",
+      "description": "Silinmiş veya kaybolmuş olsalar bile, havuzunuzdaki tüm Git referanslarının bir günlüğünü görüntüleyin.",
+      "example": "git reflog show HEAD"
+    },
+    {
+      "name": "İşlemleri Birleştir",
+      "command": "git rebase - i HEAD~[ squash işlemlerinin sayısı]",
+      "description": "Birden fazla taahhüdü tek bir taahhütte birleştirir",
+      "example": "git rebase - i KAFA~3"
+    },
+    {
+      "name": "Değişiklik Günlüğünü Göster",
+      "command": "git reflog",
+      "description": "Deponun BAŞLIĞINDAKİ değişikliklerin bir kaydını görüntüler",
+      "example": "git reflog"
+    },
+    {
+      "name": "İşlemleri Karşılaştır",
+      "command": "git diff [commit A]..[commit B]",
+      "description": "İki işlem arasındaki farkları gösterir",
+      "example": "git diff abc123..def456"
+    },
+    {
+      "name": "Git Yapılandırması",
+      "command": "git config [seçenek]",
+      "description": "Git ayarlarını yapılandırır",
+      "example": "git config -- global user.name 'Adınız'"
+    },
+    {
+      "name": "Dosyaları sil",
+      "command": "git rm [dosya]",
+      "description": "Depodan bir dosya siler",
+      "example": "git rm example.txt"
+    },
+    {
+      "name": "Etiket İşlemi",
+      "command": "git tag [tag name]",
+      "description": "Belirli bir işleme etiket ekler",
+      "example": "git tag v1.0.0"
+    },
+    {
+      "name": "Önceki işlemi kurtar",
+      "command": "git ödeme [commit]",
+      "description": "Önceki bir işleme geçer ve deponun durumunu geri yükler",
+      "example": "git checkout abc123"
+    },
+    {
+      "name": "Şubeye geç",
+      "command": "git switch <branch_name>",
+      "description": "Belirtilen kola geçiş yapar.",
+      "example": "git switch feature_shube"
+    },
+    {
+      "name": "Yeni bir şube oluştur ve yeni bir şubeye geç",
+      "command": "git switch - c < yeni_şube_adı>",
+      "description": "Belirtilen isimle yeni bir dal oluşturur ve yeni bir dala geçer.",
+      "example": "git switch - c new_feature_shube"
+    },
+    {
+      "name": "Dala zorlama anahtarı",
+      "command": "git switch - C <branch_name>",
+      "description": "Belirtilen şubeye geçmeye zorlar, yerel değişiklikleri atar.",
+      "example": "git anahtarı - C ÖZELLİK_ŞUBESİ"
+    }
+  ]
+}

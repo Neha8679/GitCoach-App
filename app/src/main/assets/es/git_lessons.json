@@ -1,0 +1,226 @@
+{
+  "gitLessons": [
+    {
+      "LessonTitle": "Introducción a Git",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "¿Qué es Git?",
+          "Example": "",
+          "Explanation": "Git es un tipo de software informático conocido como sistema de control de versiones. Ayuda a las personas a realizar un seguimiento de los cambios realizados en su código informático u otros archivos basados en texto a lo largo del tiempo. Es como un libro de historia para sus archivos, lo que le permite ver quién hizo cambios, qué cambios se hicieron y cuándo sucedieron."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "¿Por qué se usa?",
+          "Example": "",
+          "Explanation": "Git se utiliza para facilitar el trabajo de proyectos con otras personas. Ayuda a múltiples personas a colaborar en los mismos archivos sin sobrescribir accidentalmente el trabajo del otro.\n\nTambién te permite experimentar con nuevas ideas sin preocuparte por arruinar lo que ya has hecho.\n\nAdicionalmente, Git es genial para mantener copias de seguridad y administrar diferentes versiones de tus archivos para que siempre puedas volver a un estado anterior si es necesario"
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Installing Git",
+          "Example": "git --version",
+          "Explanation": "Vaya al sitio web oficial de Git (https://git-scm.com/) y busque la sección de descargas.\n\nElija la versión de Git que coincida con el sistema operativo de su computadora (como Windows, macOS o Linux).\n\nUna vez completada la descarga, abra el archivo descargado y siga las instrucciones de instalación.\n\nUna vez finalizada la instalación, puede verificar que Git está instalado abriendo un terminal o símbolo del sistema y escribiendo"
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Configurando Git en su ordenador",
+          "Example": "git config --global user.name 'Tu nombre'\ngit config --global user.email 'Tu ID de correo electrónico'",
+          "Explanation": "Para utilizar Git, primero necesita configurarlo en su computadora configurando su nombre de usuario y dirección de correo electrónico. Esta información se adjuntará a cada compromiso que realices en Git."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "😕 ¿Son iguales Git y Github?",
+          "Example": "",
+          "Explanation": "No, Git y GitHub no son los mismos, pero son conceptos relacionados \n\nGit es la tecnología central que administra el control de versiones localmente.\n\nGitHub es una plataforma que hace fácil almacenar, compartir y colaborar en los repositorios Git a través de Internet. Otras plataformas similares incluyen GitLab y Bitbucket."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Git básico",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Inicializando un proyecto",
+          "Example": "git init",
+          "Explanation": "Después de instalar Git, el primer paso es configurar el control de versiones para su proyecto.\n\nAbra su terminal de línea de comandos o Git Bash (si está en Windows) y navegue hasta el directorio donde desea iniciar su proyecto.\n\nUtilice el siguiente comando para inicializar un nuevo repositorio Git"
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Crear archivos y añadir texto",
+          "Example": "Hola, este es mi primer archivo",
+          "Explanation": "Puede utilizar cualquier editor de texto que prefiera, como bloc de notas, Vim, Sublime o Código Visual Studio\n\nCrear un nuevo archivo 'hola'. xt' y luego escribir el siguiente texto y guardar el archivo"
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Añadir y rastrear archivos",
+          "Example": "git add hello.txt",
+          "Explanation": "Una vez que haya creado y editado su archivo, es hora de comenzar a rastrearlo con Git.\n\nPara hacer esto, use el comando 'git add <nombre de archivo>'."
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Comprobando estado",
+          "Example": "git status",
+          "Explanation": "En cualquier momento, puede comprobar el estado de su repositorio para ver qué archivos se rastrean, modifican o almacenan provisionalmente para la próxima confirmación.\n\nEl comando 'git status' le proporciona esta información."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Haciendo Compromisos",
+          "Example": "git commit -m \"mi primer commit\"",
+          "Explanation": "Un compromiso en Git representa una instantánea de tu proyecto en un momento determinado.\n\nEs una forma de grabar tus cambios y proporcionar una descripción significativa de lo que has hecho.\n\nPara hacer un commit, utiliza el siguiente comando"
+        },
+        {
+          "StepNumber": 6,
+          "Description": "¿Qué sigue?",
+          "Example": "",
+          "Explanation": "🎉 ¡Felicidades! Has cubierto los fundamentos de Git.\n\nMientras continuas tu viaje con Git, aprenderás más sobre sucursales, fusiones, etc.\n\nY no olvides que la documentación de Git y los tutoriales en línea son excelentes recursos para profundizar tu entendimiento."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Ramas de Git",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "¿Qué es una rama de Git?",
+          "Example": "",
+          "Explanation": "A Git branch is a separate line of development that allows you to work on different parts of your project without affecting the main codebase.\n\nThis is particularly useful for collaboration and managing multiple features, bug fixes, or experiments simultaneously.\n\nBranches help isolate changes, making it easier to review, test, and integrate them back into the main codebase."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Creando una rama",
+          "Example": "git branch feature-login",
+          "Explanation": "Para crear una nueva rama, utilice el comando `git branch` seguido por el nombre de la rama que desea crear."
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Cambiando rama",
+          "Example": "git checkout feature-login",
+          "Explanation": "Para cambiar a la nueva rama, utilice el comando `git checkout` o `git switch` seguido por el nombre de la rama."
+        },
+        {
+          "StepNumber": 4,
+          "Description": "[Shortcut] Crear y cambiar rama",
+          "Example": "git checkout -b feature-registrnup",
+          "Explanation": "Para crear y cambiar a la nueva rama en un comando, usa el `git checkout -b <branch-name>`."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Fusionando rama",
+          "Example": "git checkout main\ngit merge feature-login",
+          "Explanation": "Una vez que estés satisfecho con los cambios que has hecho en tu rama, es el momento de combinar esos cambios de nuevo en el código base principal.\n\nPara hacer esto, cambia a la rama principal/maestra y usa el comando `git merge`."
+        },
+        {
+          "StepNumber": 6,
+          "Description": "Eliminando una rama",
+          "Example": "git branch -d feature-login",
+          "Explanation": "Asegúrese de haber combinado todos los cambios de la rama que desea eliminar antes de ejecutar este comando.\n\nPara eliminar una rama, utilice el comando 'git branch' seguido de la opción '-d' .\n\nSi necesita eliminar forzosamente una rama, use el indicador '-D' en lugar de '-d'."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Staging de Git",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Qué es Git Staging",
+          "Example": "",
+          "Explanation": "El ensayo de Git es el proceso de preparar un conjunto de cambios que se confirmarán en el repositorio de Git.\n\nLe permite seleccionar solo los cambios que desea incluir en la siguiente confirmación, en lugar de confirmar todos los cambios realizados en el repositorio."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Añadiendo cambios al Área de Staging de Git",
+          "Example": "git add file1.txt file2.txt",
+          "Explanation": "Para agregar cambios al área de ensayo de Git, use el comando 'git add' seguido de los nombres de los archivos que desea agregar. Esto escalonará los cambios, lo que significa que se incluirán en la próxima confirmación."
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Viendo los cambios escenificados y no escalonados",
+          "Example": "git diff\ngit diff --staged",
+          "Explanation": "Para ver los cambios que ha realizado en el repositorio Git, utilice el comando 'git diff'.\n\nPara ver solo los cambios pre-configurados, use el comando 'git diff --staged'. Esto mostrará una lista de los cambios que se han organizado y están listos para ser confirmados."
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Eliminar los cambios del área de Staging",
+          "Example": "git reset file1.txt",
+          "Explanation": "Para eliminar cambios del área de Staging de Git, utiliza el comando `git reset` seguido por el nombre del archivo que quieres eliminar.\n\nEsto eliminará los cambios del Área de Escenia, pero seguirán existiendo en el árbol de trabajo."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Compromiso de Cambios Escenarios",
+          "Example": "git commit -m 'Mensaje de confirmación'",
+          "Explanation": "Para confirmar los cambios en el área de ensayo de Git en el repositorio de Git, use el comando 'git commit' seguido de un mensaje de confirmación.\n\nEsto creará una nueva confirmación en el registro de Git con los cambios que ha organizado."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "GitHub",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "¿Qué es GitHub?",
+          "Example": "",
+          "Explanation": "GitHub es una plataforma web para el control de versiones y colaboración que utiliza Git.\n\nProvee un repositorio centralizado para proyectos, facilitando la colaboración de los equipos en los cambios de código y rastreo."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Crear una cuenta de GitHub",
+          "Example": "",
+          "Explanation": "Para empezar a usar GitHub, necesita crear una cuenta de GitHub visitando el sitio web de GitHub y siguiendo el proceso de registro. Se le pedirá que proporcione su nombre de usuario, dirección de correo electrónico y contraseña."
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Crear un nuevo repositorio de GitHub",
+          "Example": "",
+          "Explanation": "1. Inicie sesión en su cuenta de GitHub.\n\n2. Haga clic en el icono \"+\" en la esquina superior derecha y seleccione \"Nuevo repositorio\"\n\n3. Proporcione un nombre para su repositorio, una breve descripción y elija si es público (visible para cualquiera) o privado (visible sólo para los colaboradores)\n\n4. Seleccione opciones adicionales si es necesario, como inicializar el repositorio con un archivo README\n\n5. Haga clic en \"Crear repositorio\""
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Clonar un repositorio de GitHub",
+          "Example": "git clone <repository_link>",
+          "Explanation": "Clonar un repositorio significa copiar su contenido en su máquina local.\n\nEsto le permite realizar cambios, realizar un seguimiento de ellos con Git y enviar esos cambios al repositorio.\n\nPara clonar un repositorio de GitHub en tu máquina local, usa el comando 'git clone' seguido de la URL del repositorio de GitHub.\n\nPor ejemplo: \"git clone https://github.com/firstcontributions/first-contributions.git\""
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Haciendo Cambios y Enviando a GitHub",
+          "Example": "git add .\ngit commit -m \"message\"\n\ngit push origin main",
+          "Explanation": "Una vez que haya clonado un repositorio, puede realizar cambios en los archivos como lo haría con cualquier otro repositorio Git.\n\nDespués de realizar cambios, sigue estos pasos para insertar los cambios en GitHub.\n\nLuego use el comando 'git push' seguido del nombre de la rama a la que desea enviar los cambios. Esto cargará los cambios en el repositorio de GitHub."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Git a GitHub Workflow usando Terminal",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Crear un nuevo repositorio de Git localmente",
+          "Example": "git init mi-nuevo-proyecto",
+          "Explanation": "Para comenzar a usar Git para un nuevo proyecto, necesita crear un nuevo repositorio Git. Puedes hacerlo navegando al directorio de tu proyecto en la terminal y ejecutando el comando `git init`."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Añadiendo archivos al repositorio Git",
+          "Example": "git add .\ngit commit -m 'Initial commit'",
+          "Explanation": "Para añadir archivos al repositorio Git, utiliza el comando `git add` seguido por los nombres de archivos o `. para añadir todos los archivos en el directorio. Luego usa el comando `git commit` para crear un nuevo commit con un mensaje describiendo los cambios que has hecho."
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Crear un nuevo repositorio de GitHub",
+          "Example": "",
+          "Explanation": "Para crear un nuevo repositorio de GitHub, inicie sesión en su cuenta de GitHub y haga clic en el botón 'Nuevo repositorio'. Se le pedirá que proporcione un nombre de repositorio, una descripción y seleccione la visibilidad del repositorio (público o privado)."
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Añadir el repositorio de GitHub como un remoto",
+          "Example": "git remoto añadir origen https://github.com/user/repo.git",
+          "Explanation": "Para enlazar el repositorio Git local con el repositorio GitHub, necesita agregar el repositorio GitHub como un control remoto en Git. Puedes hacer esto usando el comando `git remote add` seguido por el nombre que quieres dar al remoto (normalmente `origin`) y la URL del repositorio de GitHub."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Enviando los cambios al repositorio de GitHub",
+          "Example": "git push -u origin master",
+          "Explanation": "Para empujar los cambios en el repositorio Git local al repositorio GitHub, usa el comando `git push` seguido por el nombre del remoto (`origin`) y la rama a la que quieres empujar los cambios (`master`). La opción `-u` establece el control remoto y la rama como el predeterminado para futuros comandos `git push`."
+        }
+      ]
+    }
+  ]
+}

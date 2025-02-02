@@ -1,0 +1,226 @@
+{
+  "gitLessons": [
+    {
+      "LessonTitle": "Git'e Giriş",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Git Nedir?",
+          "Example": "",
+          "Explanation": "Git, sürüm kontrol sistemi olarak bilinen bir bilgisayar yazılımı türüdür. İnsanların bilgisayar kodlarında veya diğer metin tabanlı dosyalarında zaman içinde yapılan değişiklikleri takip etmelerine yardımcı olur.\n\nDosyalarınız için bir tarih kitabı gibidir, kimin değişiklik yaptığını, hangi değişikliklerin yapıldığını ve ne zaman yapıldığını görmenizi sağlar."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Neden Kullanılır?",
+          "Example": "",
+          "Explanation": "Git, diğer insanlarla projeler üzerinde çalışmayı çok daha kolay hale getirmek için kullanılır. Birden fazla kişinin yanlışlıkla birbirlerinin çalışmalarının üzerine yazmadan aynı dosyalar üzerinde işbirliği yapmasına yardımcı olur.\n\nAyrıca, daha önce yaptıklarınızı mahvetme endişesi duymadan yeni fikirleri denemenizi sağlar.\n\nEk olarak, Git yedekleri tutmak ve dosyalarınızın farklı sürümlerini yönetmek için mükemmeldir, böylece gerekirse her zaman önceki bir duruma geri dönebilirsiniz"
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Git Kuruluyor",
+          "Example": "git -- version",
+          "Explanation": "Resmi Git web sitesine (https://git-scm.com/) gidin ve indirme bölümünü bulun.\n\nBilgisayarınızın işletim sistemine uygun Git sürümünü seçin (Windows, macOS veya Linux gibi).\n\nİndirme işlemi tamamlandıktan sonra, indirilen dosyayı açın ve kurulum talimatlarını izleyin.\n\nKurulum tamamlandıktan sonra, bir terminal veya komut istemi açıp şunları yazarak Git'in yüklendiğini doğrulayabilirsiniz."
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Git'i bilgisayarınıza kurma",
+          "Example": "git config -- global user.name 'Adınız'\ngit config -- global user.email 'E - posta Kimliğiniz'",
+          "Explanation": "Git'i kullanmak için önce kullanıcı adınızı ve e - posta adresinizi belirleyerek bilgisayarınızda yapılandırmanız gerekir. Bu bilgiler, Git'te yaptığınız her işleme eklenecektir."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "😕 Git ve Github aynı mı?",
+          "Example": "",
+          "Explanation": "Hayır, Git ve GitHub aynı değildir, ancak ilgili kavramlardır \n\nGit, sürüm kontrolünü yerel olarak yöneten temel teknolojidir.\n\nGitHub, internet üzerinden Git depolarında depolamayı, paylaşmayı ve işbirliği yapmayı kolaylaştıran bir platformdur. Diğer benzer platformlar GitLab ve Bitbucket'tir."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Git Temel Bilgileri",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Bir Projeyi Başlatma",
+          "Example": "git init",
+          "Explanation": "Git'i kurduktan sonra ilk adım projeniz için sürüm kontrolü kurmaktır.\n\nKomut satırı terminalinizi veya Git Bash'inizi açın (Windows kullanıyorsanız) ve projenizi başlatmak istediğiniz dizine gidin.\n\nYeni bir Git deposunu başlatmak için aşağıdaki komutu kullanın"
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Dosya Oluşturma ve Metin Ekleme",
+          "Example": "Merhaba, Bu benim ilk dosyam",
+          "Explanation": "Not Defteri, Vim,Sublime veya Visual Studio Code gibi tercih ettiğiniz herhangi bir metin düzenleyiciyi kullanabilirsiniz\n\nYeni bir 'hello.txt' dosyası oluşturun ve ardından aşağıdaki metni yazın ve dosyayı kaydedin"
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Dosya Ekleme ve İzleme",
+          "Example": "git add hello.txt",
+          "Explanation": "Dosyanızı oluşturduktan ve düzenledikten sonra, Git ile izlemeye başlama zamanı gelmiştir.\n\nBunu yapmak için 'git add <file name>' komutunu kullanın."
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Durum Kontrol Ediliyor",
+          "Example": "git durumu",
+          "Explanation": "Herhangi bir noktada, bir sonraki işlem için hangi dosyaların izlendiğini, değiştirildiğini veya hazırlandığını görmek için havuzunuzun durumunu kontrol edebilirsiniz.\n\n'git status' komutu size bu bilgileri sağlar."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "İşlemler Yapma",
+          "Example": "git commit - m \"ilk işlemim\"",
+          "Explanation": "Git'teki bir işlem, projenizin belirli bir zamandaki anlık görüntüsünü temsil eder.\n\nDeğişikliklerinizi kaydetmenin ve yaptıklarınızın anlamlı bir açıklamasını sunmanın bir yoludur.\n\nBir taahhütte bulunmak için aşağıdaki komutu kullanırsınız"
+        },
+        {
+          "StepNumber": 6,
+          "Description": "Sırada ne var?",
+          "Example": "",
+          "Explanation": "🎉 Tebrikler! Git'in temellerini ele aldınız.\n\nGit ile yolculuğunuza devam ederken, dallanma, birleşme vb. hakkında daha fazla bilgi edineceksiniz.\n\nVe gıt belgelerinin ve çevrimiçi eğitimlerin anlayışınızı derinleştirmek için mükemmel kaynaklar olduğunu unutmayın."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Git Şubeleri",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Git Şubesi Nedir?",
+          "Example": "",
+          "Explanation": "Git dalı, ana kod tabanını etkilemeden projenizin farklı bölümleri üzerinde çalışmanıza izin veren ayrı bir geliştirme satırıdır.\n\nBu, özellikle işbirliği yapmak ve birden fazla özelliği, hata düzeltmesini veya deneyi aynı anda yönetmek için kullanışlıdır.\n\nŞubeler, değişiklikleri izole etmeye yardımcı olarak bunları gözden geçirmeyi, test etmeyi ve ana kod tabanına yeniden entegre etmeyi kolaylaştırır."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Şube Oluşturma",
+          "Example": "git branch feature - login",
+          "Explanation": "Yeni bir dal oluşturmak için `git branch` komutunu ve ardından oluşturmak istediğiniz dalın adını kullanın."
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Şube Değiştirme",
+          "Example": "git ödeme özelliği - giriş",
+          "Explanation": "Yeni şubeye geçmek için `git checkout` veya `git switch` komutunu ve ardından şubenin adını kullanın."
+        },
+        {
+          "StepNumber": 4,
+          "Description": "[Kısayol] Şube Oluştur ve Değiştir",
+          "Example": "git checkout - b feature - signup",
+          "Explanation": "Tek bir komutla yeni dal oluşturmak ve yeni dala geçmek için `git checkout - b <branch - name >' komutunu kullanın."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Birleştirme Şubesi",
+          "Example": "git ödeme ana\ngit merge feature - login",
+          "Explanation": "Şubenizde yaptığınız değişikliklerden memnun kaldığınızda, bu değişiklikleri ana kod tabanında birleştirmenin zamanı gelmiştir.\n\nBunu yapmak için main/master branch'e geçin ve `git merge` komutunu kullanın."
+        },
+        {
+          "StepNumber": 6,
+          "Description": "Şube Silme",
+          "Example": "git branch - d feature - login",
+          "Explanation": "Bu komutu çalıştırmadan önce silmek istediğiniz daldaki tüm değişiklikleri birleştirdiğinizden emin olun.\n\nBir dalı silmek için `git branch` komutunu ve ardından '- d `seçeneğini kullanın.\n\nBir dalı zorla silmeniz gerekiyorsa, '- d 'yerine '- D` işaretini kullanın."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Git Evreleme",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Git Evreleme Nedir?",
+          "Example": "",
+          "Explanation": "Git hazırlama, Git havuzuna işlenecek bir dizi değişiklik hazırlama sürecidir.\n\nDepoda yapılan tüm değişiklikleri yapmak yerine yalnızca bir sonraki işleme dahil etmek istediğiniz değişiklikleri seçmenize olanak tanır."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Git Hazırlama Alanına değişiklik ekleme",
+          "Example": "git add file1.txt file2.txt",
+          "Explanation": "Git Evreleme Alanına değişiklik eklemek için `git add` komutunu ve ardından eklemek istediğiniz dosyaların adlarını kullanın.\n\nBu, değişiklikleri aşamalandıracaktır, bu da bir sonraki işleme dahil edilecekleri anlamına gelir."
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Aşamalı ve Aşamasız Değişiklikleri Görüntüleme",
+          "Example": "git diff\ngit diff -- stage",
+          "Explanation": "Git deposunda yaptığınız değişiklikleri görüntülemek için `git diff` komutunu kullanın.\n\nYalnızca aşamalı değişiklikleri görüntülemek için `git diff -- staged` komutunu kullanın. Bu, gerçekleştirilen ve gerçekleştirilmeye hazır olan değişikliklerin bir listesini görüntüleyecektir."
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Evreleme Alanından Değişikliklerin Kaldırılması",
+          "Example": "git reset file1.txt",
+          "Explanation": "To remove changes from the Git Staging Area, use the `git reset` command followed by the name of the file you want to remove.\n\nThis will remove the changes from the Staging Area, but they will still exist in the working tree."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Committing Staged Changes",
+          "Example": "git commit -m 'Commit message'",
+          "Explanation": "To commit the changes in the Git Staging Area to the Git repository, use the `git commit` command followed by a commit message.\n\nThis will create a new commit in the Git log with the changes you have staged."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "GitHub",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "What is GitHub?",
+          "Example": "",
+          "Explanation": "GitHub is a web-based platform for version control and collaboration that uses Git.\n\nIt provides a centralized repository for projects, making it easier for teams to collaborate on code and track changes."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Creating a GitHub Account",
+          "Example": "",
+          "Explanation": "To start using GitHub, you need to create a GitHub account by visiting the GitHub website and following the sign-up process. You will be asked to provide your username, email address, and password."
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Creating a New GitHub Repository",
+          "Example": "",
+          "Explanation": "1. Log in to your GitHub account.\n\n2. Click the \"+\" icon in the top-right corner and select \"New repository\"\n\n3. Provide a name for your repository, a brief description, and choose whether it's public (visible to anyone) or private (visible only to collaborators)\n\n4. Select additional options if needed, such as initializing the repository with a README file\n\n5. Click \"Create repository\""
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Cloning a GitHub Repository",
+          "Example": "git clone <repository_link>",
+          "Explanation": "Cloning a repository means copying its contents to your local machine.\n\nThis allows you to make changes, track them with Git, and push those changes back to the repository.\n\nTo clone a GitHub repository to your local machine, use the `git clone` command followed by the URL of the GitHub repository.\n\n For Example: \"git clone https://github.com/firstcontributions/first-contributions.git\""
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Making Changes and Pushing to GitHub",
+          "Example": "git add .\ngit commit -m \"message\"\n\ngit push origin main",
+          "Explanation": "Once you've cloned a repository, you can make changes to the files just like you would with any other Git repository.\n\nAfter making changes, follow these steps to push your changes to GitHub.\n\nThen use the `git push` command followed by the name of the branch you want to push the changes to. This will upload the changes to the GitHub repository."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Git to GitHub Workflow using Terminal",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Creating a new Git repository locally",
+          "Example": "git init my-new-project",
+          "Explanation": "To start using Git for a new project, you need to create a new Git repository. You can do this by navigating to your project's directory in the terminal and running the `git init` command."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Adding files to the Git repository",
+          "Example": "git add .\ngit commit -m 'Initial commit'",
+          "Explanation": "To add files to the Git repository, use the `git add` command followed by the file names or `.` to add all files in the directory. Then use the `git commit` command to create a new commit with a message describing the changes you've made."
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Creating a new GitHub repository",
+          "Example": "",
+          "Explanation": "To create a new GitHub repository, log in to your GitHub account and click on the 'New repository' button. You will be asked to provide a repository name, description, and select the repository's visibility (public or private)."
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Adding the GitHub repository as a remote",
+          "Example": "git remote add origin https://github.com/user/repo.git",
+          "Explanation": "To link the local Git repository with the GitHub repository, you need to add the GitHub repository as a remote in Git. You can do this using the `git remote add` command followed by the name you want to give the remote (typically `origin`) and the URL of the GitHub repository."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Pushing the changes to the GitHub repository",
+          "Example": "git push -u origin master",
+          "Explanation": "To push the changes in the local Git repository to the GitHub repository, use the `git push` command followed by the name of the remote (`origin`) and the branch you want to push the changes to (`master`). The `-u` option sets the remote and branch as the default for future `git push` commands."
+        }
+      ]
+    }
+  ]
+}

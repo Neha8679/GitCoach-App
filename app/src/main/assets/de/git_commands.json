@@ -1,0 +1,279 @@
+{
+  "gitCommands": [
+    {
+      "name": "Repository initialisieren",
+      "command": "git init [directory]",
+      "description": "Initialisieren Sie ein neues Git-Repository im aktuellen oder angegebenen Verzeichnis.",
+      "example": "git init mein_projekt"
+    },
+    {
+      "name": "Repository klonen",
+      "command": "git clone [repository_url] [directory]",
+      "description": "Klone ein bestehendes Git-Repository in ein neues Verzeichnis auf dem lokalen Rechner.",
+      "example": "git clone https://github.com/user/repo.git my_repo"
+    },
+    {
+      "name": "Dateien hinzufügen",
+      "command": "git add [file(s)]",
+      "description": "Fügen Sie Dateien zum Git-Staging-Bereich hinzu, bereit für einen Commit.",
+      "example": "git add file1.txt file2.txt"
+    },
+    {
+      "name": "Änderungen übertragen",
+      "command": "git commit -m [message]",
+      "description": "Änderungen am Git-Repository in der History mit einer angegebener Commit-Nachricht speichern.",
+      "example": "git commit -m 'Hinzufügen wichtiger Dateien'"
+    },
+    {
+      "name": "Änderungen pushen",
+      "command": "git push [remote_name] [branch_name]",
+      "description": "Änderungen in ein entferntes Repository übertragen.",
+      "example": "git push origin master"
+    },
+    {
+      "name": "Remote Änderungen abrufen",
+      "command": "git pull [remote_name] [branch_name]",
+      "description": "Änderungen aus einem entfernten Repository abrufen und mit dem lokalen Repository zusammenführen.",
+      "example": "git pull origin master"
+    },
+    {
+      "name": "Status prüfen",
+      "command": "git status",
+      "description": "Den Status des Git-Projektarchives überprüfen und Änderungen ansehen, die noch nicht durchgeführt wurden.",
+
+      "example": "git status"
+    },
+    {
+      "name": "Commit History anzeigen",
+      "command": "git log",
+      "description": "Zeigt die History der Commits im Git-Repository an.",
+      "example": "git Log"
+    },
+    {
+      "name": "Neuen Branch erstellen",
+
+      "command": "git branch [branch_name]",
+      "description": "Einen neuen Branch im Git-Repository erstellen.",
+      "example": "git branch new_feature"
+    },
+    {
+      "name": "Zu einem Branch wechseln",
+      "command": "git checkout [branch_name]",
+      "description": "Zu einem anderen Branch im Git-Repository wechseln.",
+      "example": "git checkout new_feature"
+    },
+    {
+      "name": "Branche vergleichen",
+      "command": "git diff [branch1] [branch2]",
+      "description": "Unterschiede zwischen zwei Branchen im Git-Repository vergleichen.",
+      "example": "git diff master new_feature"
+    },
+    {
+      "name": "Branche zusammenführen",
+      "command": "git merge [branch_name]",
+      "description": "Änderungen eines bestimmten Branchs in den aktuellen Branch im Git-Repository zusammenführen.",
+
+      "example": "git merge new_feature"
+    },
+    {
+      "name": "Branch umbenennen",
+      "command": "git branch -m [new_branch_name]",
+      "description": "Den aktuellen Branch im Git-Repository umbenennen.",
+      "example": "git branch -m updated_feature"
+    },
+    {
+      "name": "Branch löschen",
+      "command": "git branch -d [branch_name]",
+      "description": "Löschen Sie einen Branch im Git-Repository.",
+      "example": "git branch -d outdated_feature"
+    },
+    {
+      "name": "Änderungen zurücksetzen",
+      "command": "git reset [file]",
+      "description": "Änderungen an einer Datei im Git-Repository zu vorherigen Commit zurücksetzen.",
+      "example": "git reset file1.txt"
+    },
+    {
+      "name": "Commit zurücknehmen",
+      "command": "git revert [commit_hash]",
+      "description": "Einen bestimmten Commit im Git-Repository rückgängig machen.",
+      "example": "git revert bad_feature"
+    },
+    {
+      "name": "Einen Commit markieren",
+      "command": "git tag [tag_name] [commit_hash]",
+      "description": "Fügen Sie einen Tag zu einem bestimmten Commit im Git-Repository hinzu.",
+      "example": "git tag v1.0 abc123"
+    },
+    {
+      "name": "Änderungen speichern",
+      "command": "git stash",
+      "description": "Änderungen im Git-Repository speichern, ohne diese zu übergeben.",
+      "example": "git stash"
+    },
+    {
+      "name": "Gespeicherte Änderungen anwenden",
+      "command": "git stash apply",
+      "description": "Änderungen anwenden, die im Git-Staging-Bereich vorgemerkt wurden.",
+
+      "example": "git stash apply"
+    },
+    {
+      "name": "Gesperrte Änderungen auflisten",
+      "command": "git stash list",
+      "description": "Listet alle vorgemerkten Änderungen im Git-Repository auf.",
+
+      "example": "git stash list"
+    },
+    {
+      "name": "Gespeicherte Änderungen entfernen",
+      "command": "git stash drop",
+      "description": "Gespicherte Änderungen aus dem Git-Repository entfernen.",
+      "example": "git stash drop"
+    },
+    {
+      "name": "Commit-Log anzeigen",
+      "command": "git log",
+      "description": "Zeigt den Commit-Verlauf des Git-Repositorys an.",
+      "example": "git log"
+    },
+    {
+      "name": "Commit-Unterschiede anzeigen",
+      "command": "git show [commit_hash]",
+      "description": "Zeigt die Unterschiede eines bestimmten Commits im Git-Repository an.",
+      "example": "git show ac123"
+    },
+    {
+      "name": "Entfernte Änderungen abrufen",
+      "command": "git fetch",
+      "description": "Holen Sie Aktualisierungen von einem Remote-Repository in das lokale Repository.",
+      "example": "git fetch"
+    },
+    {
+      "name": "Entfernte Änderungen ziehen",
+      "command": "git pull",
+      "description": "Aktualisierungen aus einem entfernten Projektarchiv in das lokale Projektarchiv holen und zusammenführen.",
+      "example": "git pull"
+    },
+    {
+      "name": "Lokale Änderungen pushen",
+      "command": "git push [remote_name] [branch_name]",
+      "description": "Lokale Änderungen in ein entferntes Repository speichern.",
+      "example": "git push origin new_feature"
+    },
+    {
+      "name": "Remote-Repository hinzufügen",
+      "command": "git remote add [remote_name] [remote_url]",
+      "description": "Ein entferntes Repository zum lokalen Repository hinzufügen.",
+      "example": "git remote add upstream https://github.com/upstream_repo.git"
+    },
+    {
+      "name": "Entferntes Repository entfernen",
+      "command": "git remote remove [remote_name]",
+      "description": "Entfernt ein entferntes Repository aus dem lokalen Repository.",
+      "example": "git remote remove upstream"
+    },
+    {
+      "name": "Remote-Repositorys anzeigen",
+      "command": "git remote show [remote_name]",
+      "description": "Informationen über ein entferntes Repository im lokalen Repository anzeigen.",
+      "example": "git remote show origin"
+    },
+    {
+      "name": "Git Rebase",
+      "command": "git rebase [options] [--onto newbase] [Upstream [branch]]",
+      "description": "Überschreibe Commits durch Verschieben von Commits von einem Branch auf einen anderen.",
+      "example": "git rebase master"
+    },
+    {
+      "name": "Git Cherry-pick",
+      "command": "git cherry-pick [options] <commit>",
+      "description": "Änderungen übernehmen, die durch einige bestehende Commits eingeführt wurden.",
+      "example": "git cherry-pick abc123"
+    },
+    {
+      "name": "Git Binärsuche",
+      "command": "git bisect [start] [end]",
+      "description": "Finden Sie heraus, welcher Commit in einer Reihe einen Fehler eingeführt hat, indem Sie eine Binärsuche durchführen.",
+      "example": "git bisect Start HEAD HEAD~10"
+    },
+    {
+      "name": "Vorübergehend speichern",
+      "command": "git stash [save | push] [-p|--patch] [-k|--keep-index] [-u|--include-untracked] [-a|--all] [-q|--quiet] [<message>]",
+      "description": "Änderungen temporär speichern, die noch nicht übertragen werden können.",
+      "example": "git stash save \"work in progress\""
+    },
+    {
+      "name": "Git Untermodule",
+      "command": "git submodule [options] [submodule]",
+      "description": "Verwalten Sie Sub-Repositorys innerhalb Ihres Git-Repositorys.",
+      "example": "git submodule update --init"
+    },
+    {
+      "name": "Referenzprotokoll",
+      "command": "git reflog [options] [show]",
+      "description": "Einen Log aller Git-Referenzen im Projektarchiv ansehen, auch wenn diese gelöscht oder verloren gingen.",
+      "example": "git reflog show HEAD"
+    },
+    {
+      "name": "Commits kombinieren",
+      "command": "git rebase -i HEAD~[Anzahl der Commits zum Squash]",
+      "description": "Kombiniert mehrere Commits zu einem einzigen Commit",
+      "example": "git rebase -i HEAD~3"
+    },
+    {
+      "name": "Log der Änderungen anzeigen",
+      "command": "git reflog",
+      "description": "Zeigt ein Protokoll der Änderungen am HEAD des Repositorys an",
+      "example": "git reflog"
+    },
+    {
+      "name": "Commits vergleichen",
+      "command": "git diff [commit A]..[commit B]",
+      "description": "Zeigt die Unterschiede zwischen zwei Commits an",
+      "example": "git diff abc123..def456"
+    },
+    {
+      "name": "Git Konfiguration",
+      "command": "git config [option]",
+      "description": "Git-Einstellungen konfigurieren",
+      "example": "git config --global user.name 'Dein Name'"
+    },
+    {
+      "name": "Dateien löschen",
+      "command": "git rm [file]",
+      "description": "Löscht eine Datei aus dem Repository",
+      "example": "git rm example.txt"
+    },
+    {
+      "name": "Tag Commit",
+      "command": "git tag [tag name]",
+      "description": "Fügt einem bestimmten Commit einen Tag hinzu",
+      "example": "git tag v1.0.0"
+    },
+    {
+      "name": "Vorherigen Commit wiederherstellen",
+      "command": "git checkout [commit]",
+      "description": "Wechselt zu einem vorherigen Commit und stellt den Status des Projektarchivs wieder her",
+      "example": "git checkout abc123"
+    },
+    {
+      "name": "Zu Branch wechseln",
+      "command": "git Switch <branch_name>",
+      "description": "Wechselt zum angegebenen Branch.",
+      "example": "git switch feature_branch"
+    },
+    {
+      "name": "Neuen Branch erstellen und dorthin wechseln",
+      "command": "git switch -c <new_branch_name>",
+      "description": "Erstellt und wechselt zu einem neuen Branch mit dem angegebenen Namen.",
+      "example": "git switch -c new_feature"
+    },
+    {
+      "name": "Zum Branch wechseln erzwingen",
+      "command": "git switch -C <branch_name>",
+      "description": "Erzwingt den Wechsel zum angegebenen Branch, verwirft lokale Änderungen.",
+      "example": "git switch -C feature_Branch"
+    }
+  ]
+}
