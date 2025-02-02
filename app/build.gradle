@@ -6,13 +6,13 @@ plugins {
 }
 
 android {
-    namespace 'com.vishal2376.gitcoach'
+    namespace 'com.neha.gitcoach'
     compileSdk 34
 
     kotlinOptions { jvmTarget = "17" }
 
     defaultConfig {
-        applicationId "com.vishal2376.gitcoach"
+        applicationId "com.neha.gitcoach"
         minSdk 24
         targetSdk 34
         versionCode 15

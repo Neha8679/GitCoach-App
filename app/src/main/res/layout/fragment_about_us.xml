@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:fontFamily="@font/rubik_medium"
-                android:text="@string/vishal_singh"
+                android:text="@string/neha_kharera"
                 android:textColor="@color/colorGreen"
                 android:textSize="@dimen/_18ssp" />
 
